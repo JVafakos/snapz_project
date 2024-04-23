@@ -1,0 +1,190 @@
+/* WiseCat css */
+html {scroll-behavior: smooth;}
+
+/* Moodle Quiz Theme CSS Modifications */
+
+.que.formulation {
+   background: none repeat scroll 0 0 #f5f5f5;
+}
+div.formulation.clearfix {
+   background: none repeat scroll 0 0 #f5f5f5;
+}
+div.outcome.clearfix {
+   background: none repeat scroll 0 0 #f5f5f5;
+}
+a.navbar-brand{
+   font-family: Orbitron;
+   font-weight: 600;
+}
+header#page-header{
+   font-family: Montserrat;
+   font-weight: 600;
+}
+div.login-container{
+   opacity: 0.7;
+}
+
+/* This changes the page body background color */
+/* WiseCat */
+#page,body {
+background: #90A4AE;
+}
+/* End */
+
+/* End EMoodle Quiz Theme CSS Modifications */
+
+
+/* Moodle Snapz CSS ver. 2  Questions -- Solutions */
+
+
+.question-page,
+.solution-page,
+.choices {    
+    max-width: 66rem;
+    font-family: "Montserrat", sans-serif;    
+    font-weight: 400;
+    color: #212121;
+    background: transparent;
+}
+
+#qst, 
+#sol {    
+    max-width: 66rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #212121;
+}
+
+h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 98%;
+    font-weight: 400;
+    color: #000;
+}
+
+h6 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+q {
+   font-style: italic;
+}
+
+div.container {
+   overflow: auto;
+}
+table.calc-table{
+   table-layout: fixed;
+   width: 100%;
+}
+
+.hint {
+   font-family: "Montserrat", sans-serif;
+   font-weight: 400;
+   color: #212121;   
+   margin-bottom: 2rem;
+   border-left: 0.25rem solid #Ff1744;
+}
+
+.brief {
+    font-size: 0.875rem;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+/* cautionary note */
+.c-note {    
+    background-color: #fdf4e8;
+    border-left: 0.25rem solid #f0ad4e;
+}
+
+/* general code note */
+.g-note {
+    background-color: #fafffa;
+    border-left: 0.25rem solid #009900;
+}
+
+/* note dealing with question material */
+.q-note {
+    background-color: #eaf7fb;
+    border-left: 0.25rem solid #5bc0de;
+}
+
+/* Memorization */
+.mem-note {
+    width: 35%;
+    background-color: #edf7ed;
+    border-left: 0.25rem solid #5cb85c;
+}
+
+/* calculation formatting code */
+.m-calc {
+   max-width: 80%;
+   font-family: "Roboto Mono", SFMono-Regular, Consolas, "Courier New",
+      monospace;
+   color: #000;
+   background-color: #fff;
+   border: 1px solid #eee;
+   border-radius: 0.5rem;
+   box-shadow: 3px 3px #f5f5f5;
+}
+
+/* calculation formatting theory */
+.m-calc-th {
+    max-width: 70%;
+    font-family: "Roboto Mono", SFMono-Regular, Consolas, "Courier New",
+        monospace;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #eceff1;
+}
+
+footer {
+    font-size: 0.875rem;
+    color: #616161;
+    border: 1px solid #424242;
+    border-radius: 0.5rem;
+}
+
+p.m-calc:hover {
+    background-color: yellow;
+}
+
+table tr:hover {
+    background: yellow;
+}
+
+table.calc-table th,
+td {
+    border-bottom: none;
+}
+
+@media (min-width: 300px){
+   body{
+      font-size: .75rem;
+   }
+}   
+
+@media (min-width: 768px) {
+   body{ 
+      font-size: .80rem;
+   }  
+}
+
+@media (min-width: 992px) {
+   body{ 
+      font-size: 1.00rem;
+   } 
+}
+  
+@media (min-width: 1200px) {
+  body{ 
+      font-size: 1.10rem;
+   }
+}
+
+

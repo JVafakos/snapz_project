@@ -1,0 +1,78 @@
+/* print CSS */
+/* dtd: 1-10-2024 11:42 AM */
+/* version 8 */
+
+body {
+   margin: 0;
+}
+
+h4 {
+   font-weight: 600;
+   font-size: 1.15rem;
+   color:#000;
+}
+ 
+h6 {
+   font-weight: 600;
+   font-size: 1.05rem;
+   color:#000;
+}
+
+q {
+   font-style: italic;
+}
+
+table {
+   font-weight: bold;
+   color:#000;
+}
+
+td {
+   border-bottom: 0;
+}
+
+#qst, 
+#sol {    
+    max-width: 75ch;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    color: #000;
+}
+
+.question-page,
+.solution-page,
+.choices {    
+    max-width: 75ch;    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    color: #000;
+}
+
+.brief {
+   font-size: 0.875rem;
+}
+
+.m-calc {
+    font-family:'Consolas','SF Mono','Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.q-note,
+.g-note,
+.q-note,
+.mem-note {
+   background-color: #fafafa;
+   border-left: 0.25rem solid #000;
+}
+
+.font-italic {
+   font-style: italic;
+}
+
+@media print {
+   .no-print,
+   .no-print * {
+     display: none !important;
+   }
+ }
+ 
