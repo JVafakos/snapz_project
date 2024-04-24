@@ -4,29 +4,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="snapz.css">
-    <title>CSS Positioning</title>
+    <link rel="stylesheet" href="snapz-print.css">
+    <title>Question QID:23-00057</title>
 </head>
 
-<body>
-    <div class="main">
-
-
-        <div class="box">
-            <div class="float"><img
-                    src="https://snapz.com/wp-content/uploads/2024/01/U-Pull-typeC-2.png?time=1678821148167"
-                    alt="U-Pull Box 2-inch EMT" width="355" height="289">
-            </div>
-            <p>What <strong>minimum</strong> distance (labeled "C" in the drawing) is required for a U-pull of 3 3/0 THW
-                in a 2-inch EMT conduit that enters and leaves on the same side of the pull box</p>
+<body> 
+    <div class="question-page">
+        <details class="m-2">
+          <summary class="no-print">Question</summary>
+          <p class="brief">Use this ID when reporting a problem. <strong>QID:
+              23-00057</strong></p>
+        </details>
+        <div class="mx-3 my-2 p-2">
+          <p>An apartment building has 12 dwelling units each with 1,640 square feet
+            of space plus the following equipment: 12.0 kW range, 5.0 kW water heater,
+            5.0 kW dryer, and 10.5 kW of heat supplied from 5 pieces of baseboard
+            heat. Using the optional calculation, what is the minimum size service
+            entrance permitted for this building at 120/240 volts?</p>
+        </div>  
+        <div class="mx-3 my-2 p-2">
+          <h4>Answer Choices</h4> 
+            <ul> 
+              <li class="abc">&nbsp;&nbsp;&nbsp;859 A</li>
+              <li class="abc">1,074 A</li>
+              <li class="abc">1,110 A</li>
+              <li class="abc">2,096 A</li>
+            </ul>
         </div>
-        <ul>
-            <li class="abc">16 inches</li>
-            <li class="abc">14 inches</li>
-            <li class="abc">18 inches</li>
-            <li class="abc">12 inches</li>
-        </ul>
-
+    </div> 
+    
+    <div class="solution-page">
+            <details class="m-2">
+              <summary>Solution</summary>
+              <p class="brief">Use this ID when reporting a problem. <strong>QID:
+                  23-00057</strong></p>
+            </details>
+            <div class="mx-3 my-2 p-2">
+              <h4>Start by Looking Up</h4>
+              <p><q>Dwellings</q> in the index and find the sub-index listing for
+                <q>Feeder load calculations,</q> which refers to Sections 220.82 through
+                220.85. In this case, multifamily dwelling, which is Section 220.84.</p>
+              <p class="mx-4">The solution to this problem involves 6 steps:</p>
+              <p class="mx-4">1. Total all the General Lighting Loads<br>2. Total all the
+                Small Appliance &amp; Laundry Loads<br>3. Total all the Fixed Appliance
+                Loads<br>4. Total of the Larger of Heating or A/C Loads<br>5. Apply the
+                demand factor<br>6. Calculate the service size.</p>
+            </div>
+            <div class="mx-3 my-2 p-2">
+              <h4>Step 1 – General Lighting Load</h4>
+              <p>Total all the General Lighting Loads. Section 220.84(C)(1) requires 3
+                volt-amperes per square foot for general lighting and general-use
+                receptacles.</p>
+              <p class="m-calc mx-2 px-3 py-1">1640 ft<sup>2</sup> × 3 VA = 4,920 VA</p>
+              <p class="mx-sm-2">Total all apartments:</p>
+              <p class="m-calc mx-2 px-3 py-1">4,920 VA × 12 units = 59,040 VA</p>
+              <br>
+              <div class="q-note">
+                <div class="mx-2"> </div>
+                <p class="p-2"><strong>Note:</strong> This includes all receptacle loads
+                  in a dwelling unit, except for the small appliance loads from Section
+                  220.84(C)(2).</p>
+              </div>
+            </div>
+            <div class="mx-3 my-2 p-2">
+              <h4>Step 2 – Small Appliance &amp; Laundry Loads.</h4>
+              <p>Section 220.82(B)(1) requires a minimum of 1500 volt-amperes for each
+                2-wire, 20-ampere small appliance circuit, and each laundry circuit
+                specified in Section 220.52.</p>
+              <div class="m-calc mx-2 px-3 py-2">
+                <table class="mx-auto" width="100%">
+                  <tbody>
+                    <tr>
+                      <th class="text-left" colspan="5">Small Appliance &amp; Laundry
+                        Loads</th>
+                    </tr>
+                    <tr>
+                      <td class="text-left">Small Appliance Load</td>
+                      <td class="text-right">3,000</td>
+                      <td class="text-center">VA</td>
+                      <td class="text-center">×</td>
+                      <td class="text-center">12</td>
+                      <td class="text-center">=</td>
+                      <td class="text-right">36,000</td>
+                      <td class="text-center">VA</td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">Laundry Load</td>
+                      <td class="text-right">1,500</td>
+                      <td class="text-center">VA</td>
+                      <td class="text-center">×</td>
+                      <td class="text-center">12</td>
+                      <td class="text-center">=</td>
+                      <td class="text-right">18,000</td>
+                      <td class="text-center">VA</td>
+                    </tr>
+                    <tr style="border-top: 2px solid black;">
+                      <td class="text-left" colspan="5">Total Load</td>
+                      <td class="text-center">=</td>
+                      <td class="text-right">54,000</td>
+                      <td class="text-center">VA</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="mx-3 my-2 p-3">
+              <h4>Step 3 – Fixed Appliance Loads</h4>
+              <p>Total all the Fixed Appliance Loads Section 220.84(C)(3) requires using
+                the nameplate rating of all appliances fastened in place, etc. Each
+                apartment has:</p>
+              <div class="m-calc mx-2 p-3">
+                <table class="mx-auto" width="98%">
+                  <tbody>
+                    <tr>
+                      <th class="text-left" colspan="5">Fixed Appliance Loads</th>
+                    </tr>
+                    <tr>
+                      <td>Range</td>
+                      <td class="text-right">12,000</td>
+                      <td class="text-center">VA</td>
+                      <td class="text-center">×</td>
+                      <td class="text-center">12</td>
+                      <td class="text-center">=</td>
+                      <td class="text-right">144,000</td>
+                      <td class="text-center">VA</td>
+                    </tr>
+                    <tr>
+                      <td>Water Heater</td>
+                      <td class="text-right">5,000</td>
+                      <td class="text-center">VA</td>
+                      <td class="text-center">×</td>
+                      <td class="text-center">12</td>
+                      <td class="text-center">=</td>
+                      <td class="text-right">60,000</td>
+                      <td class="text-center">VA</td>
+                    </tr>
+                    <tr>
+                      <td>Dryer</td>
+                      <td class="text-right">5,000</td>
+                      <td class="text-center">VA</td>
+                      <td class="text-center">×</td>
+                      <td class="text-center">12</td>
+                      <td class="text-center">=</td>
+                      <td class="text-right">60,000</td>
+                      <td class="text-center">VA</td>
+                    </tr>
+                    <tr style="border-top: 2px solid black;">
+                      <td colspan="5">Total Load</td>
+                      <td class="text-center">=</td>
+                      <td class="text-right">264,000</td>
+                      <td class="text-center">VA</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br>
+              <div class="q-note mx-auto">
+                <div class="m-2"> </div>
+                <p class="p-2"><strong>Note:</strong> The dryer must be calculated using
+                  its nameplate rating according to Section 220.84(C)(3).</p>
+              </div>
+            </div>
+            <div class="mx-3 my-2 p-2">
+              <h4>Step 4 – Heating or A/C Load</h4>
+              <p>Section 220.84(C)(5) requires using the largest of either the heating or
+                the air-conditioning load.</p>
+              <p class="m-calc mx-2 px-3 py-1">10,500 VA × 12 units = 126,000 VA</p>
+            </div>
+            <div class="mx-3 my-2 p-2">
+              <h4>Step 5 – Apply Demand Factor</h4>
+              <p>Apply the demand factor for the 12 apartments.</p>
+              <p class="mx-2">Total the values computed in steps 1 through 4:</p>
+              <div class="m-calc mx-2 p-3">
+                <table class="mx-auto" width="98%">
+                  <tbody>
+                    <tr>
+                      <th class="text-left" colspan="5">Demand Factors</th>
+                    </tr>
+                    <tr>
+                      <td class="text-left">General Lighting</td>
+                      <td class="text-center">=</td>
+                      <td class="text-right">59,040</td>
+                      <td class="text-center">VA</td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">Small Appliance</td>
+                      <td class="text-center">=</td>
+                      <td class="text-right">54,000</td>
+                      <td class="text-center">VA</td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">Fixed Appliance</td>
+                      <td class="text-center">=</td>
+                      <td class="text-right">264,000</td>
+                      <td class="text-center">VA</td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">Larger Heating or A/C</td>
+                      <td class="text-center">=</td>
+                      <td class="text-right">126,000</td>
+                      <td class="text-center">VA</td>
+                    </tr>
+                    <tr style="border-top: 2px solid black;">
+                      <td class="text-left">Total Load</td>
+                      <td class="text-center">=</td>
+                      <td class="text-right">503,040</td>
+                      <td class="text-center">VA</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br>
+              <p class="mx-2">Table 220-84 specifies the demand factor for 12 apartments
+                as 41%.</p>
+              <p class="m-calc mx-2 px-3 py-1">503,040 VA × 0.41 = 206,246 VA</p>
+            </div>
+            <div class="mx-3 my-2 p-2">
+              <h4>Step 6 – Calculate Service Size</h4>
+              <p>Calculate the service size by dividing the computed service load by the
+                service voltage. This will be used to determine the minimum size feeders
+                required.</p>
+              <p class="m-calc mx-2 px-3 py-1">206,246 VA / 240 V = 859.36 A</p>
+              <p class="mx-sm-2">This is rounded to 859 A per Section 220.5(B).</p>
+            </div>         
     </div>
 
 
