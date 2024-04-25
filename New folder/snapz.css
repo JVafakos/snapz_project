@@ -79,6 +79,11 @@ table.calc-table{
    table-layout: fixed;
    width: 100%;
 }
+tr.last {
+   border-top-color: #000;
+   border-width: 2px;
+   border-top-style: solid;
+ }
 
 .hint {
    font-family: "Montserrat", sans-serif;
