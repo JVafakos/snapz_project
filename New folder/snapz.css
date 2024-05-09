@@ -27,7 +27,7 @@ div.login-container{
 /* This changes the page body background color */
 /* WiseCat */
 #page,body {
-background: #90A4AE;
+background: #ccdee7;
 }
 /* End */
 
@@ -44,7 +44,7 @@ background: #90A4AE;
     font-family: "Montserrat", sans-serif;    
     font-weight: 400;
     color: #212121;
-    background: transparent;
+    background:#f5f5f5;
 }
 
 #qst, 
@@ -102,26 +102,29 @@ tr.last {
 }
 
 /* cautionary note */
-.c-note {    
+.c-note {  
+    width: 80%;  
     background-color: #fdf4e8;
     border-left: 0.25rem solid #f0ad4e;
 }
 
 /* general code note */
 .g-note {
+    width: 80%;
     background-color: #fafffa;
     border-left: 0.25rem solid #009900;
 }
 
 /* note dealing with question material */
 .q-note {
+    width: 80%;
     background-color: #eaf7fb;
     border-left: 0.25rem solid #5bc0de;
 }
 
 /* Memorization */
 .mem-note {
-    width: 35%;
+    width: 40%;
     background-color: #edf7ed;
     border-left: 0.25rem solid #5cb85c;
 }
